@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- רקע הכפתור -->
+    <solid android:color="#FFFFFF" /> <!-- רקע לבן -->
+
+    <!-- מסגרת הכפתור -->
+    <stroke
+        android:width="2dp"
+        android:color="#003366" />
+
+    <!-- פינות מעוגלות -->
+    <corners android:radius="12dp" /> <!-- פינות מעוגלות -->
+</shape>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Greek restaurant</string>
+    <string name="number_of_seats">מספר מוזמנים</string>
+    <string name="date">תאריך</string>
+    <string name="select_date">בחר תאריך</string>
+    <string name="time">שעה</string>
+    <string name="select_time">בחר שעה</string>
+    <string name="vegan_option_needed">צמחוני</string>
+    <string name="smoking_zone">אזור עישון</string>
+    <string name="payment_method">שיטת תשלום</string>
+    <string name="credit_card">אשראי</string>
+    <string name="bit_transfer">העברה בביט</string>
+    <string name="cash">מזומן</string>
+    <string name="confirm_booking">אשר הזמנה</string>
+    <string name="order">הזמנה :</string>
+    <string name="menu">תפריט</string>
+    <string name="book_a_table">הזמן שולחן</string>
+    <string name="my_order">ההזמנה שלי</string>
+    <string name="close_menu">סגור תפריט</string>
+    <string name="greekos">גריקוס</string>
+    <string name="greek_salad_10">סלט יווני | 35₪</string>
+    <string name="kabab_fries_and_mayo_15">קבב, צ\'יפס ומיונז | 50₪</string>
+    <string name="salmon_on_mashed_poteto_20">סלמון ופירה | 70₪</string>
+    <string name="griled_fish_and_lime_20">דג צלוי וליים | 70₪</string>
+    <string name="orenge_juice_3">מיץ תפוזים | 10₪</string>
+    <string name="cola_3">קולה | 10₪</string>
+    <string name="fruits_smoodis_5">שייק פירות | 15₪</string>
+    <string name="name">שם</string>
+    <string name="enter_your_name">הכנס את שמך</string>
+    <string name="order_details">פרטי ההזמנה</string>
+    <string name="close">סגירה</string>
+    <string name="no_orders_yet">אין עדיין הזמנות</string>
+    <string name="seats">מוזמנים</string>
+    <string name="vegan">צמחוני</string>
+    <string name="vegan_yes">כן</string>
+    <string name="vegan_no">לא</string>
+    <string name="payment">תשלום</string>
+    <string name="smoke_yes">כן</string>
+    <string name="smoke_no">לא</string>
+    <string name="please_enter_your_name">אנא מלא את שמך</string>
+    <string name="please_select_time">בחר שעה</string>
+    <string name="please_select_date">בחר תאריך</string>
+    <string name="order_saved">ההזמנה נשמרה !</string>
+    <string name="please_choose_payment_method">אנא בחר שיטת תשלום</string>
+
+</resources>
