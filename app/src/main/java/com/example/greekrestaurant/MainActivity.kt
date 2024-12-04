@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private var isMenuOpen: Boolean = false
     private var isBookTableViewOpen: Boolean = false
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val bookTableButton: Button = findViewById(R.id.book_table)
+        makeButtonBlink(bookTableButton)
         val descriptionTextView: TextView = findViewById(R.id.description)
         animateDescriptionTextSlide(descriptionTextView)
         initializeMainLayout()
@@ -77,6 +80,9 @@ class MainActivity : AppCompatActivity() {
         val closeMenuButton: Button = findViewById(R.id.close_menu)
         val bookTableButton: Button = findViewById(R.id.book_table)
         val myOrderButton: Button = findViewById(R.id.orders)
+
+
+        makeButtonBlink(bookTableButton)
 
         menuButton.setOnClickListener {
             openMenu()
@@ -274,5 +280,15 @@ class MainActivity : AppCompatActivity() {
     private fun animateDescriptionTextSlide(textView: TextView){
         textView.translationX = -1000f
         textView.animate().translationX(0f).setDuration(1000).start()
+    }
+
+    private fun makeButtonBlink(button: Button) {
+        val blinkAnimation = ObjectAnimator.ofFloat(button, "alpha", 1f, 0.5f, 1f).apply {
+            duration = 2000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }
+        blinkAnimation.start()
+
     }
 }
