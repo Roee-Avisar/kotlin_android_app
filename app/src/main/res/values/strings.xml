@@ -7,8 +7,7 @@
     <string name="close_menu">Close Menu</string>
     <string name="greekos">Greekos</string>
     <string name="greek_salad_10">Greek Salad | 10$.</string>
-    <string name="kabab_fries_and_mayo_15">Kabab, Fries and mayo | 15$.</string>
-    <string name="salmon_on_mashed_poteto_20">Salmon on mashed poteto | 20$.</string>
+    <string name="salmon_on_mashed_potato_20">Salmon on mashed potato | 20$.</string>
     <string name="griled_fish_and_lime_20">Griled fish and lime | 20$.</string>
     <string name="orenge_juice_3">Orenge Juice | 3$.</string>
     <string name="cola_3">cola | 3$.</string>
@@ -42,4 +41,12 @@
     <string name="please_select_date">Please select date</string>
     <string name="order_saved">Order saved !</string>
     <string name="please_choose_payment_method">Please choose payment method</string>
+    <string name="Description_text">Welcome to Greekos – a charming Greek restaurant perched on a breathtaking hillside, offering stunning views of the blue sea.\n\nCome and enjoy authentic flavors, fresh dishes, and enchanting aromas in a true Greek atmosphere that will leave you with a smile.\n\nYour Greek experience begins here – at Greekos!</string>
+    <string name="please_fill_all_fields">Please fill all fields</string>
+    <string name="long_press_on_the_order_for_canceling">Long press on the order for canceling</string>
+    <string name="order_deleted">Order deleted</string>
+    <string name="kabab_fries_and_dip_15">Kabab, Fries and dip | 15$</string>
+    <string name="kabab_fries_15">kabab and fries | 15$</string>
+    <string name="traditional_greek_ouzo_shot_5">Traditional Greek Ouzo Shot | $5</string>
+    <string name="dolmadakia_stuffed_grape_leaves_8">Dolmadakia (Stuffed Grape Leaves) | $8</string>
 </resources>

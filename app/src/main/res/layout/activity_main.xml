@@ -12,14 +12,14 @@
     <ImageView
         android:id="@+id/greekos_img"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp"
         android:scaleType="fitXY"
         android:src="@drawable/greekos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/header_title"
@@ -78,18 +78,20 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Greekos – a charming Greek restaurant perched on a breathtaking hillside, offering stunning views of the blue sea.\n\nCome and enjoy authentic flavors, fresh dishes, and enchanting aromas in a true Greek atmosphere that will leave you with a smile.\n\nYour Greek experience begins here – at Greekos!"
-        android:textSize="16sp"
-        android:padding="16dp"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bar_buttons"
-        app:layout_constraintBottom_toTopOf="@+id/menu_layout"/>
+      <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Description_text"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar_buttons"
+            app:layout_constraintBottom_toTopOf="@+id/menu_layout"/>
+
 
     <LinearLayout
         android:id="@+id/menu_layout"
@@ -102,14 +104,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="20dp">
 
-        <!-- Close Menu Button -->
         <Button
             android:id="@+id/close_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/close_menu" />
 
-        <!-- ScrollView for Images and Explanations -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -167,12 +167,41 @@
                         android:id="@+id/kabab_text"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/kabab_fries_and_mayo_15"
+                        android:text="@string/kabab_fries_15"
                         android:textSize="16sp"
                         app:layout_constraintStart_toEndOf="@id/kabab_img"
                         app:layout_constraintTop_toTopOf="@id/kabab_img"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="@id/kabab_img"
+                        android:layout_marginStart="8dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/gefen_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/gefen"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/gefen_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dolmadakia_stuffed_grape_leaves_8"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/gefen_img"
+                        app:layout_constraintTop_toTopOf="@id/gefen_img"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/gefen_img"
                         android:layout_marginStart="8dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -196,7 +225,7 @@
                         android:id="@+id/salmon_text"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/salmon_on_mashed_poteto_20"
+                        android:text="@string/salmon_on_mashed_potato_20"
                         android:textSize="16sp"
                         app:layout_constraintStart_toEndOf="@id/salmon_img"
                         app:layout_constraintTop_toTopOf="@id/salmon_img"
@@ -320,9 +349,37 @@
                         app:layout_constraintBottom_toBottomOf="@id/smoodi_img"
                         android:layout_marginStart="8dp" />
 
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/ozo_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/ozo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/ozo_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/traditional_greek_ouzo_shot_5"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/ozo_img"
+                        app:layout_constraintTop_toTopOf="@id/ozo_img"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/ozo_img"
+                        android:layout_marginStart="8dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

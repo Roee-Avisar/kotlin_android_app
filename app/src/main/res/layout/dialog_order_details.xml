@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height = "match_parent"
-        android:text="Long press on the order for canceling"
+        android:text="@string/long_press_on_the_order_for_canceling"
         android:layout_marginTop="8dp"
         android:textStyle="bold"
         android:textAlignment="center"

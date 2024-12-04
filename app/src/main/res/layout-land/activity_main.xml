@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/greekos_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greekos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/bar_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/menu" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/book_table"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/book_a_table" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/my_order" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/Description_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_buttons" />
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/bar_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/close_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close_menu"
+            android:layout_gravity="end"
+            android:layout_margin="8dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/salad_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/salad" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/greek_salad_10"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/kabab"
+                        android:id="@+id/kabab_img"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kabab_fries_and_dip_15"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_margin="16dp">
+
+                     <ImageView
+                         android:layout_width="120dp"
+                         android:layout_height="120dp"
+                         android:src="@drawable/gefen"
+                         android:id="@+id/gefen_img"/>
+
+                     <TextView
+                         android:layout_width="120dp"
+                         android:layout_height="wrap_content"
+                         android:text="@string/dolmadakia_stuffed_grape_leaves_8"
+                         android:textSize="16sp"
+                         android:gravity="center"
+                         android:padding="4dp"
+                         android:maxLines="3"
+                         android:ellipsize="end" />
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/salmon_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/salmon"
+                        />
+
+                    <TextView
+                        android:id="@+id/salmon_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salmon_on_mashed_potato_20"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        android:scrollbars="vertical"
+                        android:focusable="true"
+                        android:clickable="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/fish_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/fish" />
+
+                    <TextView
+                        android:id="@+id/fish_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/griled_fish_and_lime_20"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/orenge_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/orenge" />
+
+                    <TextView
+                        android:id="@+id/orenge_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/orenge_juice_3"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/cola_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cola"
+                        />
+
+                    <TextView
+                        android:id="@+id/cola_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cola_3"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"  />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/smoodi_img"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/smoodi"
+                       />
+
+                    <TextView
+                        android:id="@+id/smoodi_text"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fruits_smoodis_5"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:ellipsize="end" />
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:gravity="center"
+                     android:layout_margin="16dp">
+
+                     <ImageView
+                         android:id="@+id/ozo_img"
+                         android:layout_width="120dp"
+                         android:layout_height="120dp"
+                         android:src="@drawable/ozo"
+                         />
+
+                     <TextView
+                         android:id="@+id/ozo_text"
+                         android:layout_width="120dp"
+                         android:layout_height="wrap_content"
+                         android:text="@string/traditional_greek_ouzo_shot_5"
+                         android:textSize="16sp"
+                         android:gravity="center"
+                         android:padding="4dp"
+                         android:maxLines="3"
+                         android:ellipsize="end" />
+                 </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

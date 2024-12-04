@@ -20,8 +20,7 @@
     <string name="close_menu">סגור תפריט</string>
     <string name="greekos">גריקוס</string>
     <string name="greek_salad_10">סלט יווני | 35₪</string>
-    <string name="kabab_fries_and_mayo_15">קבב, צ\'יפס ומיונז | 50₪</string>
-    <string name="salmon_on_mashed_poteto_20">סלמון ופירה | 70₪</string>
+    <string name="salmon_on_mashed_potato_20">סלמון ופירה | 70₪</string>
     <string name="griled_fish_and_lime_20">דג צלוי וליים | 70₪</string>
     <string name="orenge_juice_3">מיץ תפוזים | 10₪</string>
     <string name="cola_3">קולה | 10₪</string>
@@ -43,5 +42,18 @@
     <string name="please_select_date">בחר תאריך</string>
     <string name="order_saved">ההזמנה נשמרה !</string>
     <string name="please_choose_payment_method">אנא בחר שיטת תשלום</string>
+    <string name="Description_text">"ברוכים הבאים ל-Greekos – מסעדה יוונית קסומה הממוקמת על צלע הר עם נוף עוצר נשימה לים הכחול
+
+    בואו ליהנות מטעמים אותנטיים, מנות טריות וריחות משכרים, באווירה יוונית אמיתית שתשאיר אתכם עם חיוך בלב.
+
+    החוויה היוונית שלכם מתחילה כאן – אצלנו ב-Greekos!"</string>
+    <string name="please_fill_all_fields">אנא מלא את כל השורות</string>
+    <string name="long_press_on_the_order_for_canceling">לחיצה ארוכה על ההזמנה תבטל אותה</string>
+    <string name="order_deleted">ההזמנה נמחקה</string>
+    <string name="kabab_fries_and_dip_15">קבב, צ\'יפס ומטבל | 50₪</string>
+    <string name="kabab_fries_15">קבב וצ\'יפס | 50₪</string>
+    <string name="traditional_greek_ouzo_shot_5">צ\'ייסר אוזו יווני מסורתי | 15₪</string>
+    <string name="dolmadakia_stuffed_grape_leaves_8">"עלי גפן ממולאים | ₪ 35 "</string>
+
 
 </resources>
